@@ -48,22 +48,19 @@ export const Navigation = () => {
     return (
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger>
-          <Button
-            variant="outline"
-            size="sm"
-            className="font-normal bg-white/10 houver:bg-white/20  houver:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent focus:bg-white/30 outline-none text-white transition"
-          >
+          <div className="p-2 rounded-md cursor-pointer font-normal bg-white/10 houver:bg-white/20  houver:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent focus:bg-white/30 outline-none text-white transition">
             <Menu className="size-4" />
-          </Button>
+          </div>
         </SheetTrigger>
         <SheetContent>
-          <nav className="flex flex-col gap-y-2 pt-6">
+          <nav className="flex flex-col gap-y-2 pt-12">
             {routes.map((route) => (
               <Button
                 key={route.href}
                 variant={route.href === pathName ? "secondary" : "ghost"}
                 size="sm"
                 onClick={() => onClick(route.href)}
+                className="w-full justify-start"
               >
                 {route.label}
               </Button>
