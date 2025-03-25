@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1742935033359,
+      "tag": "0000_tidy_vapor",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1742935947364,
+      "tag": "0001_steady_king_cobra",
+      "breakpoints": true
+    }
+  ]
+}
